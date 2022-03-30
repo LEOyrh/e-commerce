@@ -20,29 +20,27 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
-   
-    ModalModule.forRoot(),
-    HttpClientModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    ToastrModule.forRoot(), // ToastrModule added
-    CollapseModule.forRoot(),
-  ],
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    JumbotronComponent,
-    ProductsComponent,
-    FooterComponent,
-    CartComponent,
-    CheckoutComponent
-  ],
-  providers: [BsModalService, ProductService, CartService],
-  bootstrap: [AppComponent],
-  entryComponents: [CartComponent]
+    imports: [
+        BrowserModule,
+        FormsModule,
+        ReactiveFormsModule,
+        ModalModule.forRoot(),
+        HttpClientModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        ToastrModule.forRoot(),
+        CollapseModule.forRoot(),
+    ],
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        JumbotronComponent,
+        ProductsComponent,
+        FooterComponent,
+        CartComponent,
+        CheckoutComponent
+    ],
+    providers: [BsModalService, ProductService, CartService],
+    bootstrap: [AppComponent]
 })
 export class AppModule {}
